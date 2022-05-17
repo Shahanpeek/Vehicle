@@ -1,0 +1,35 @@
+public class Vehicle {
+    public Vehicle(){
+        model = "Porsche";
+        maxspeed = 245;
+        isDieselFuel = false;
+        fuel = 0;
+    }
+    String model;
+    int maxspeed;
+    boolean isDieselFuel;
+    int fuel;
+
+
+    public String getModel(){
+        return model;
+    }
+    void drive() {
+        fuel -= 30;
+        System.out.println("Вммммммм....");
+    }
+    void stop(){
+        fuel = fuel;
+        System.out.println("*останавливается*");
+    }
+    void refuel(){
+        fuel = 100;
+        System.out.println("*Заправляется*");
+    }
+
+
+    public static void main(String[] args){
+        Vehicle vehicle = new Vehicle();
+
+    }
+}
